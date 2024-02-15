@@ -1,0 +1,119 @@
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+}
+li:hover {
+  color: #C1FFC1;
+  background-color: orangered;
+}
+.naviLinks {
+  margin-right: 10px;
+}
+/* PROFILE IMAGE */
+.profile-wrapper {
+  position: relative;
+  height: 340px;
+  width: 300px;
+  margin-top: 40px;
+}
+.profile-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* .card:nth-child(2) {
+  direction: rtl;
+}
+.card:nth-child(2) .icons{
+  margin-right: 20px;
+}
+.card-details .project-description {
+  padding: 20px 10px;
+} */
+/* CONTACT FORM */
+.contact-form {
+  color: whitesmoke;
+  width: 350px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+
+}
+.contact-form img {
+  margin: 0 auto;
+}
+.contact-form code {
+ font-size: 22px;
+ margin-bottom: 10px;
+ color: #C1FFC1;
+}
+label {
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: lighter;
+  display: block;
+  margin-bottom: 3px;
+  
+}
+input {
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 6px;
+  width: 100%;
+  background-color: beige;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+input:focus {
+  outline: 1px solid orangered;
+}
+textarea {
+  width: 100%;
+  border-radius: 4px;
+  background-color: beige;
+}
+textarea:focus {
+  outline: 1px solid orangered;
+}
+.contact-btn {
+  background-color: rgb(247, 147, 16);
+  padding: 3px 20px;
+  color: #000;
+  font-family: 'Inter',sans-serif;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: all 0.3s ease 0s;
+}
+.scroll-to-top {
+  color: orangered;
+  font-size: 22px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  padding: 5px;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.scroll-to-top.show {
+  opacity: 0.5;
+}
+.scroll-to-top:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact success message */
+.success {
+  border: 1px solid #C1FFC1;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline;
+  margin-left: 20px;
+}
