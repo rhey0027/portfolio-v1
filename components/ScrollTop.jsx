@@ -29,7 +29,7 @@ const ScrollTop = () => {
   },[])
 
   return (
-    <div className={`scroll-to-top ${visible ? 'show' : ''}`} onClick={scrollToTop}
+    <div className={`scroll-to-top ${visible ? 'show' : ''}`} onClick={scrollToTop} data-aos='fade-up'
     >
       <HiChevronDoubleUp />
     </div>

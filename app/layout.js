@@ -1,3 +1,4 @@
+// import 'bootstrap/dist/css/bootstrap.min.css'
 import { Inter } from 'next/font/google'
 import '@styles/globals.css'
 import '@styles/style.css'

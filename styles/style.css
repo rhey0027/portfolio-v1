@@ -1,3 +1,4 @@
+
 li {
   display: flex;
   flex-direction: column;
@@ -38,7 +39,7 @@ li:hover {
 /* CONTACT FORM */
 .contact-form {
   color: whitesmoke;
-  width: 350px;
+  /* width: 350px; */
   margin: 0 auto;
   margin-bottom: 70px;
 
@@ -80,19 +81,23 @@ textarea:focus {
   outline: 1px solid orangered;
 }
 .contact-btn {
-  background-color: rgb(247, 147, 16);
-  padding: 3px 20px;
+  background-color: rgb(9, 218, 233);
+  padding: 10px 40px;
   color: #000;
-  font-family: 'Inter',sans-serif;
-  font-weight: 400;
+  font-weight: bold;
+  font-size: 13px;
   border-radius: 4px;
   margin-top: 10px;
   transition: all 0.3s ease 0s;
 }
+.contact-btn:hover {
+  background-color:  rgb(109, 237, 247);
+  color: #000;
+}
 .scroll-to-top {
   color: orangered;
   font-size: 22px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   border-radius: 50%;
   position: fixed;
   bottom: 60px;
@@ -103,10 +108,33 @@ textarea:focus {
   transition: 0.2s ease;
 }
 .scroll-to-top.show {
-  opacity: 0.5;
+  opacity: 1;
 }
 .scroll-to-top:hover {
   transform: translateY(-5px);
+  background-color: whitesmoke;
+}
+/* CARD */
+.card-wrapper .description {
+  font-family: 'Inter',sans-serif;
+  font-weight: 200;
+}
+/* DEV DETAILS */
+.dev-details {
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #b9f513 36%,
+    #2d3bfa 16%,
+    #11dbed 62%,
+    #f77d03 78%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* SOCIAL ICONS */
+.social-icon div {
+  margin-bottom: 10px;
 }
 
 /* Contact success message */
