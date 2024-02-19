@@ -1,4 +1,4 @@
-import React from 'react'
+import 'flowbite';
 import Image from 'next/image'
 import Link from 'next/link';
 import { FcServices } from "react-icons/fc";
@@ -151,21 +151,29 @@ const Projects = () => {
                   width={25}
                 />
                 </Link>
-                <Link href={card.link} rel='noopener noreferrer' target='_blank'
-                  className='hover:-translate-y-1 duration-150'
-                >
-                <Image 
-                  src={card.icon2} 
-                  alt='icon'
-                  width={25}
-                />
-                </Link>
+                  <Link 
+                    href={card.link} 
+                    rel='noopener noreferrer'
+                    target='_blank'
+                    className='hover:-translate-y-1 duration-150'
+                    >
+                    <Image 
+                      src={card.icon2} 
+                      alt='icon'
+                      width={25}
+                      data-tooltip-target="live-website"
+                    />
+                    <div id='live-website' role='tooltip' className="absolute z-10 invisible inline-block px-3 py-1 text-sm text-black duration-150 opacity-0 bg-yellow-300 rounded-lg shadow-sm">
+                      <p>website</p>
+                      <div className='tooltip-arrow' data-popper-arrow>
+                      </div>
+                  </div>
+                  </Link>
               </div>
               </div>
             </div>
           );
         })}
-     
       </div>
   );
 }

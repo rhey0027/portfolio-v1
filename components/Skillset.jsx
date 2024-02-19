@@ -23,9 +23,9 @@ const Skillset = () => {
           >
             <h3>Frontend</h3>
           </div>
-          <div className="container-icons flex justify-evenly  mb-7">
+          <div className="container-icons flex justify-between mb-7">
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -45,7 +45,7 @@ const Skillset = () => {
               </div>
             </div>
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300  mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -64,27 +64,27 @@ const Skillset = () => {
               </div>
             </div>
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
-                src={"/skillset/react.png"}
+                src={"/skillset/nextjs.png"}
                 width={50}
                 height={50}
-                alt="react"
-                data-tooltip-target="react"
+                alt="next"
+                data-tooltip-target="next"
               />
               <div
-                id="react"
+                id="next"
                 role="tooltip"
                 className="absolute z-10 invisible inline-block px-3 py-1 text-sm text-white transition-opacity duration-150 bg-gray-900 rounded-lg shadow-sm opacity-0"
               >
-                <p>CSS</p>
+                <p>next js</p>
                 <div className="tooltip-arrow" data-popper-arrow></div>
               </div>
             </div>
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -97,34 +97,14 @@ const Skillset = () => {
               <div
                 id="jscript"
                 role="tooltip"
-                className="absolute z-10 bg-gray-900 py-1 px-3 rounded-lg text-sm text-white transition-opacity shadow-sm invisible inline-block duration-150"
+                className="absolute z-10 bg-gray-900 py-1 px-3 rounded-lg text-sm text-white transition-opacity shadow-sm invisible opacity-0 inline-block duration-150"
               >
                 <p>javascript</p>
                 <div className="tooltip-arrow" data-popper-arrow></div>
               </div>
             </div>
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
-              data-aos="fade-up"
-            >
-              <Image
-                src={"/skillset/typescript.png"}
-                width={50}
-                height={50}
-                alt="tscript"
-                data-tooltip-target="tscript"
-              />
-              <div
-                id="tscript"
-                role="tooltip"
-                className="absolute inline-block py-1 px-3 bg-gray-900 text-sm text-white shadow-sm tooltip rounded-lg invisible opacity-0 z-10"
-              >
-                <p>typescript</p>
-                <div className="tooltip-arrow" data-popper-arrow></div>
-              </div>
-            </div>
-            <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -144,7 +124,27 @@ const Skillset = () => {
               </div>
             </div>
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
+              data-aos="fade-up"
+            >
+              <Image
+                src={"/skillset/typescript.png"}
+                width={50}
+                height={50}
+                alt="tscript"
+                data-tooltip-target="tyscript"
+              />
+              <div
+                id="tyscript"
+                role="tooltip"
+                className="absolute inline-block py-1 px-3 bg-gray-900 text-sm text-white shadow-sm tooltip rounded-lg invisible opacity-0 z-10 duration-150 transition-opacity"
+              >
+                <p>typescript</p>
+                <div className="tooltip-arrow" data-popper-arrow></div>
+              </div>
+            </div>
+            <div
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -164,7 +164,7 @@ const Skillset = () => {
               </div>
             </div>
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300  mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -194,7 +194,8 @@ const Skillset = () => {
             </div>
             <button
               className="btn btn-primary btn-md shadow-md items-center text-slate-300 hover:opacity-70 duration-150"
-              data-aos="fade-up" onClick={() => document.getElementById('front-desc').showModal()}
+              data-aos="fade-up"
+              onClick={() => document.getElementById("front-desc").showModal()}
             >
               View More
               <IoIosArrowForward
@@ -210,32 +211,64 @@ const Skillset = () => {
                     ✕
                   </button>
                 </form>
-                <h3 className="font-bold text-lg bg-gradient-to-r from-yellow-300 p-2">Job brief</h3>
+                <h3 className="font-bold text-lg bg-gradient-to-r from-yellow-300 p-2">
+                  Job brief
+                </h3>
                 <p className="py-4">
-                A Front-end developer is responsible for building the &#39;client-side&#39; of web applications. A front-end should be able to translate customer needs into functional and appealing interactive applications.
+                  A Front-end developer is responsible for building the
+                  &#39;client-side&#39; of web applications. A front-end should
+                  be able to translate customer needs into functional and
+                  appealing interactive applications.
                 </p>
                 <p>
-                Creating a user-friendly environment by writing code and moving forward in a career.Should be a tech-savvy professional, who is curious about new digital technologies and aspires to combine usability with visual design.
+                  Creating a user-friendly environment by writing code and
+                  moving forward in a career.Should be a tech-savvy
+                  professional, who is curious about new digital technologies
+                  and aspires to combine usability with visual design.
                 </p>
                 <p>
-                Ultimately,a front-end developer should be able to create a functional and attractive digital environment for a client/company, ensuring great user experience.
+                  Ultimately,a front-end developer should be able to create a
+                  functional and attractive digital environment for a
+                  client/company, ensuring great user experience.
                 </p>
-                <h3 className="font-bold text-lg mt-6 bg-gradient-to-l from-green-500 p-2">Responsibilities</h3>
-                <ul className='front-ul'>
-                  <li className='front-li'>Use markup languages like HTML to create user-friendly web pages</li>
-                  <li className='front-li'>Maintain and improve website</li>
-                  <li className='front-li'>Design mobile-based features</li>
-                  <li className='front-li'>Collaborate with back-end developers and web designers to improve usability</li>
-                  <li className='front-li'>Write functional requirement documents and guides</li>
-                  <li className='front-li'>Ensure high quality graphic standards and brand consistency</li>
+                <h3 className="font-bold text-lg mt-6 bg-gradient-to-l from-green-500 p-2">
+                  Responsibilities
+                </h3>
+                <ul className="front-ul">
+                  <li className="front-li">
+                    Use markup languages like HTML to create user-friendly web
+                    pages
+                  </li>
+                  <li className="front-li">Maintain and improve website</li>
+                  <li className="front-li">Design mobile-based features</li>
+                  <li className="front-li">
+                    Collaborate with back-end developers and web designers to
+                    improve usability
+                  </li>
+                  <li className="front-li">
+                    Write functional requirement documents and guides
+                  </li>
+                  <li className="front-li">
+                    Ensure high quality graphic standards and brand consistency
+                  </li>
                 </ul>
-                <h3 className="font-bold text-lg mt-6 bg-gradient-to-r from-indigo-300 p-2">Requirements and Skills</h3>
-                <ul className='front-ul'>
-                  <li className='front-li'>Hands on experience with markup languages</li>
-                  <li className='front-li'>Experience with JavaScript, CSS and jQuery</li>
-                  <li className='front-li'>Familiarity with browser testing and debugging</li>
-                  <li className='front-li'>Understanding of layout aesthetics</li>
-                  <li className='front-li'>Knowledge of SEO principles</li>
+                <h3 className="font-bold text-lg mt-6 bg-gradient-to-r from-indigo-300 p-2">
+                  Requirements and Skills
+                </h3>
+                <ul className="front-ul">
+                  <li className="front-li">
+                    Hands on experience with markup languages
+                  </li>
+                  <li className="front-li">
+                    Experience with JavaScript, CSS and jQuery
+                  </li>
+                  <li className="front-li">
+                    Familiarity with browser testing and debugging
+                  </li>
+                  <li className="front-li">
+                    Understanding of layout aesthetics
+                  </li>
+                  <li className="front-li">Knowledge of SEO principles</li>
                 </ul>
               </div>
             </dialog>
@@ -251,7 +284,7 @@ const Skillset = () => {
           </div>
           <div className="container-icons flex justify-evenly mb-7">
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -271,7 +304,7 @@ const Skillset = () => {
               </div>
             </div>
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -290,7 +323,7 @@ const Skillset = () => {
               </div>
             </div>
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -310,7 +343,7 @@ const Skillset = () => {
               </div>
             </div>
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -330,7 +363,7 @@ const Skillset = () => {
               </div>
             </div>
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -350,7 +383,7 @@ const Skillset = () => {
               </div>
             </div>
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -370,7 +403,7 @@ const Skillset = () => {
               </div>
             </div>
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -390,7 +423,7 @@ const Skillset = () => {
               </div>
             </div>
             <div
-              className="bg-white mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:-translate-y-1 duration-100"
+              className="bg-slate-300 mr-2 p-2 rounded-md shadow-md cursor-pointer inline-block hover:bg-white duration-100"
               data-aos="fade-up"
             >
               <Image
@@ -409,7 +442,6 @@ const Skillset = () => {
                 <div className="tooltip-arrow" data-popper-arrow></div>
               </div>
             </div>
-
           </div>
           <div className="mb-2 text-end">
             <div data-aos="fade-up">
@@ -418,13 +450,14 @@ const Skillset = () => {
                 which focuses on everything you can&#39;t see on a web
                 application. Back-end developers ensure the website performs
                 orrectly, focusing on databases, backend logic and functions,
-                application programming interface &#40;APIs&#41;,architecture and
-                servers.
+                application programming interface &#40;APIs&#41;,architecture
+                and servers.
               </p>
             </div>
             <button
               className="btn btn-warning btn-md items-center text-zinc-900 hover:opacity-70 duration-150"
-              data-aos="fade-up" onClick={() => document.getElementById('back-desc').showModal()}
+              data-aos="fade-up"
+              onClick={() => document.getElementById("back-desc").showModal()}
             >
               View More
               <IoIosArrowForward
@@ -440,23 +473,55 @@ const Skillset = () => {
                     ✕
                   </button>
                 </form>
-                <h3 className="font-bold text-lg bg-gradient-to-r from-yellow-300 p-2">Job brief</h3>
+                <h3 className="font-bold text-lg bg-gradient-to-r from-yellow-300 p-2">
+                  Job brief
+                </h3>
                 <p className="py-4">
-                A Backend developer responsibilities include creating, maintaining, testing, and debugging the entire back end of an application or system. This includes the core application logic, databases, data and application integration, API, and other processes taking place behind the scenes. A highly skilled back end developer is a programmer who knows how to analyze user needs to ensure a positive user experience.
+                  A Backend developer responsibilities include creating,
+                  maintaining, testing, and debugging the entire back end of an
+                  application or system. This includes the core application
+                  logic, databases, data and application integration, API, and
+                  other processes taking place behind the scenes. A highly
+                  skilled back end developer is a programmer who knows how to
+                  analyze user needs to ensure a positive user experience.
                 </p>
                 <p>
-                skilled back-end developer who are consistently raising the bar for user experience. Working behind the scenes, the ideal candidate will have a unique blend of technical expertise, insatiable curiosity, and analytical mindset. This person should be comfortable working independently as well as with a team in the design and development of mission-critical websites, applications, and layers of infrastructure. Experience with JavaScript, Amazon Web Services &#40;AWS&#41;, Git, or MongoDB is helpful to succeed quickly in this role. 
+                  skilled back-end developer who are consistently raising the
+                  bar for user experience. Working behind the scenes, the ideal
+                  candidate will have a unique blend of technical expertise,
+                  insatiable curiosity, and analytical mindset. This person
+                  should be comfortable working independently as well as with a
+                  team in the design and development of mission-critical
+                  websites, applications, and layers of infrastructure.
+                  Experience with JavaScript, Amazon Web Services &#40;AWS&#41;,
+                  Git, or MongoDB is helpful to succeed quickly in this role.
                 </p>
-                <h3 className="font-bold text-lg mt-6 bg-gradient-to-l from-green-500 p-2">Responsibilities</h3>
-                <ul className='front-ul'>
-                  <li className='front-li'>Excellent foundation in algorithms, and web design</li>
-                  <li className='front-li'>MExperience in writing highly secure web applications</li>
-                  <li className='front-li'>Experience with core AWS web-enabling technologies</li>
-                  <li className='front-li'>Growth mindset that challenges the status quo and focuses on outside-the-box ideas and solutions</li>
+                <h3 className="font-bold text-lg mt-6 bg-gradient-to-l from-green-500 p-2">
+                  Responsibilities
+                </h3>
+                <ul className="front-ul">
+                  <li className="front-li">
+                    Excellent foundation in algorithms, and web design
+                  </li>
+                  <li className="front-li">
+                    MExperience in writing highly secure web applications
+                  </li>
+                  <li className="front-li">
+                    Experience with core AWS web-enabling technologies
+                  </li>
+                  <li className="front-li">
+                    Growth mindset that challenges the status quo and focuses on
+                    outside-the-box ideas and solutions
+                  </li>
                 </ul>
-                <h3 className="font-bold text-lg mt-6 bg-gradient-to-r from-indigo-300 p-2">Requirements and Skills</h3>
-                <ul className='front-ul'>
-                  <li className='front-li'>Experience in designing RESTful APIs, specifically for mobile apps</li>
+                <h3 className="font-bold text-lg mt-6 bg-gradient-to-r from-indigo-300 p-2">
+                  Requirements and Skills
+                </h3>
+                <ul className="front-ul">
+                  <li className="front-li">
+                    Experience in designing RESTful APIs, specifically for
+                    mobile apps
+                  </li>
                 </ul>
               </div>
             </dialog>
