@@ -23,15 +23,15 @@ const Page = () => {
   return (
     <>
     <Navbar />
-      <div className="home px-4 pt-10 z-0">
-        <div className='p-5 md:p-20 mb-10'>
+      <div className="home px-4 pt-10 z-0 xl:px-20">
+        <div className='p-5 md:pt-20 mb-10'>
         <code className="text-[#C1FFC1] text-md font-bold"data-aos='fade-up'>
           Hello! my name is
         </code>
         <h1 className="text-3xl md:text-5xl mb-3 font-bold text-yellow-400" data-aos='fade-up'>
           Rhey Yu.
         </h1>
-        <div className="h-[35px] mb-28 md:mb-48 text-[30px] md:text-[50px] ">
+        <div className="h-[35px] mb-28 md:mb-48 text-[30px] md:text-[50px] lg:mb-28 xl:mb-28">
           <h1 className=" font-bold text-slate-300" data-aos='fade-up'>
             I&#39;m a Full Stack Web Developer.
           </h1>
@@ -39,7 +39,8 @@ const Page = () => {
             A Graphic Artist.
           </h3>
         </div>
-        <p className="text-slate-400 text-md md:w-4/5 mb-10" data-aos='fade-up'>
+        <div className="text-slate-400 text-md md:w-4/5 mb-10 lg:text-2xl">
+        <p data-aos='fade-up'>
           I have always been fascinated by how things work on the web and how it forms the design by using only codes, and it gives me the desire
           to learn more. Creative and Detailed Software Developer. Eager to
           learn more about the latest
@@ -47,6 +48,7 @@ const Page = () => {
             <br /> Web Application.
           </code>
         </p>
+        </div>
         <PortfolioButton  />
         </div>
       <About />

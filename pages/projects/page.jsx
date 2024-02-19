@@ -143,8 +143,14 @@ const Projects = () => {
               <div  className="tech text-sm mt-2 text-[#C1FFC1]" data-aos= 'fade-up'>
               <code>{card.tech}</code>
               </div>
-              <div className="share-online flex justify-end gap-5 mt-5 p-2" data-aos= 'fade-up'>
-                <Link href={card.link}>
+              <div className="share-online flex justify-between gap-5 mt-5 p-2 mb-5 bg-gradient-to-r from-indigo-800" data-aos= 'fade-up'>
+                <div>
+                <code className='text-start'>Go to live site</code>
+                </div>
+                <div className='flex'>
+                <Link href={card.link}
+                  className='pr-4'
+                >
                 <Image 
                   src={card.icon} 
                   alt='icon'
@@ -155,7 +161,7 @@ const Projects = () => {
                     href={card.link} 
                     rel='noopener noreferrer'
                     target='_blank'
-                    className='hover:-translate-y-1 duration-150'
+                    className='hover:-translate-y-1 duration-150 pr-4'
                     >
                     <Image 
                       src={card.icon2} 
@@ -169,6 +175,7 @@ const Projects = () => {
                       </div>
                   </div>
                   </Link>
+                </div>
               </div>
               </div>
             </div>

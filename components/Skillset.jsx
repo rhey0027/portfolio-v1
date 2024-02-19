@@ -5,9 +5,9 @@ import { IoIosArrowForward } from 'react-icons/io';
 
 const Skillset = () => {
   return (
-    <div className="skillset max-w-full text-slate-100 font-normal p-5">
+    <div className="xl:px-20 skillset max-w-full text-slate-100 font-normal p-5">
       <div
-        className="about flex items-center mb-3 pl-4 lg:pl-20"
+        className="about flex items-center mb-3"
         data-aos="fade-up"
       >
         <FcPortraitMode size={30} />
@@ -15,7 +15,7 @@ const Skillset = () => {
           Skills Acquired.
         </h1>
       </div>
-      <div className="w-full md:grid grid-cols-2 gap-7 ">
+      <div className="w-full md:grid grid-cols-2 gap-7">
         <div className="p-2 mb-4 bg-blue-600 rounded-md" data-aos="fade-up">
           <div
             className="w-[100px] py-1 rounded-full border border-1 text-center mb-5"

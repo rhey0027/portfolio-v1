@@ -39,6 +39,7 @@
 }
 .card:nth-child(9) {
   direction: rtl;
+
 }
 
 /*---------- CONTACT FORM ------------ */
@@ -156,4 +157,9 @@ textarea:focus {
 .front-li:hover {
   background-color: #f77d03;
   font-weight: 500;
+}
+.share-online {
+  /* background-color: rgb(75, 7, 121); */
+  border-radius: 4px;
+  color: #C1FFC1;
 }
