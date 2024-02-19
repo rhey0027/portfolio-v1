@@ -17,8 +17,10 @@ const ScrollTop = () => {
     
     if(window.scrollY >= 500 ) {
       setIsVisible(true)
+      console.log('scroll is visible to user')
     } else {
       setIsVisible(false)
+      console.log('scroll is not visible to user')
     }
   };
   useEffect(() => {

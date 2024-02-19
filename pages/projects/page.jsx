@@ -16,7 +16,106 @@ const Projects = () => {
       link: "https://github.com/jay-jay/bucket-list-app",
       icon2: require ('../../public/projects/share.png'),
       link: "https://bucket-list-app",
-    } 
+    }, 
+    {
+      id: '2', 
+      title: "Blackjact v1", 
+      desc: "This is my first card game, you can find similar games online but my version is a bit different. I implement user input, credits will automatically be added when a player wins and credits will be subtracted when user lose. if credit is '0', buttons will be disabled. And a player cannot start a game if the player is empty.", 
+      tech: "JavaScript,  CSS, html, localStorage", 
+      img: require ('../../public/projects/blackjack.png'), 
+      icon: require ('../../public/projects/git.png'), 
+      link: "https://github.com/jay-jay/bucket-list-app",
+      icon2: require ('../../public/projects/share.png'),
+      link: "https://blackjact.vercel.app",
+    }, 
+    {
+      id: '3', 
+      title: "Database Management System", 
+      desc: "A school Database equipped with Admin dashboard, students/registered users can view records like grades, payment, subjects and others. Only registered users can login to view updated records.", 
+      tech: "JavaScript,Tailwindcss, Bootstrap, React, localStorage,mySql,ExpressJs,Dependencies for backend e.g. Bcrypt, jsonwebtoken to name a few...", 
+      img: require ('../../public/projects/sdms.png'), 
+      icon: require ('../../public/projects/git.png'), 
+      link: "https://github.com/jay-jay/bucket-list-app",
+      icon2: require ('../../public/projects/share.png'),
+      link: "https://blackjact.vercel.app",
+    }, 
+    {
+      id: '4', 
+      title: "Yutube Photo Gallery", 
+      desc: "A youtube alike design to store pictures. I build this when I was still learning for a couple of weeks. Getting to know the structure of the Document Object Model (DOM) and the responsiveness when viewing in different screen size.", 
+      tech: "html, css, javascript", 
+      img: require ('../../public/projects/yutube.png'), 
+      icon: require ('../../public/projects/git.png'), 
+      link: "https://github.com/jay-jay/bucket-list-app",
+      icon2: require ('../../public/projects/share.png'),
+      link: "https://blackjact.vercel.app",
+    }, 
+    {
+      id: '5', 
+      title: "Sweetcake Alabama", 
+      desc: "A first mini project from bootcamp. An online ordering application focuses on different types of cakes. I'm still updating this to Nextjs and finishing implementing the backend logic with database and user authentication system.", 
+      tech: "html, css, javascript", 
+      img: require ('../../public/projects/sweetcake.png'), 
+      icon: require ('../../public/projects/git.png'), 
+      link: "https://github.com/jay-jay/bucket-list-app",
+      icon2: require ('../../public/projects/share.png'),
+      link: "https://sweetcakesss.000webhostapp.com"
+    }, 
+    {
+      id: '6', 
+      title: "Counter Tracker v-2", 
+      desc: "A minified counting assistant, this can be used in a game, or anything that needs counting. This i my updated version with list of each number that you want to store and a total output. I also implement localStorage to save inputs. Equipped with disabled functions in buttons to disregard zeros", 
+      tech: "html, css, tailwindcss, javascript", 
+      img: require ('../../public/projects/counter-tracker.png'), 
+      icon: require ('../../public/projects/git.png'), 
+      link: "https://github.com/jay-jay/bucket-list-app",
+      icon2: require ('../../public/projects/share.png'),
+      link: "https://counter-tracker.vercel.app/",
+    }, 
+    {
+      id: '7', 
+      title: "MyEx", 
+      desc: "It's not what you think it is:-). This is a web url storage application, works like a bookmark in a web browser.You can save your favorite website by clicking the save url button and you can also type your preferred web url manually, with a customized photo", 
+      tech: "html, css, javascript", 
+      img: require ('../../public/projects/my-chrome-ex.png'), 
+      icon: require ('../../public/projects/git.png'), 
+      link: "https://github.com/jay-jay/bucket-list-app",
+      icon2: require ('../../public/projects/share.png'),
+      link: "https://blackjact.vercel.app",
+    }, 
+    {
+      id: '8', 
+      title: "Reanna's Deli", 
+      desc: "I build this 2 years ago when I'm still in my early days of practicing web development. An online food ordering application. I'm still updating this to ver-2, this is hard coded in html and I want to build this in dynamic mode with nextjs and database models together with payment method. ", 
+      tech: "html, css, javascript, bootstrap", 
+      img: require ('../../public/projects/rheanna.png'), 
+      icon: require ('../../public/projects/git.png'), 
+      link: "https://github.com/jay-jay/bucket-list-app",
+      icon2: require ('../../public/projects/share.png'),
+      link: "https://blackjact.vercel.app",
+    }, 
+    {
+      id: '9', 
+      title: "24-hour Clock format with links", 
+      desc: "I build this because I want to have a custom web everytime I open a browser. Implement a clock function with my links ready on the fly. ", 
+      tech: "html, css, javascript", 
+      img: require ('../../public/projects/customClock.png'), 
+      icon: require ('../../public/projects/git.png'), 
+      link: "https://github.com/jay-jay/bucket-list-app",
+      icon2: require ('../../public/projects/share.png'),
+      link: "https://eps-clock-rhey0027.vercel.app/",
+    }, 
+    {
+      id: '10', 
+      title: "Your Daily Horoscope", 
+      desc: "For those who wants to be updated with their horoscope,I build this just for you.", 
+      tech: "html, css, javascript", 
+      img: require ('../../public/projects/horoscope.png'), 
+      icon: require ('../../public/projects/git.png'), 
+      link: "https://github.com/jay-jay/bucket-list-app",
+      icon2: require ('../../public/projects/share.png'),
+      link: "https://horoscop-rhey0027.vercel.app/",
+    }, 
   ]
 
   return (
@@ -29,7 +128,7 @@ const Projects = () => {
       </div>
         {cards.map((card) => {
           return (
-            <div className="p-7 lg:grid grid-cols-2 lg:p-16" key={card.id}>
+            <div className="card lg:grid grid-cols-2 lg:p-16" key={card.id}>
               <div className='flex justify-center' data-aos= 'fade-up'>
                 <Image src={card.img}  alt={card.img} className='objectFit hover:scale-105 duration-150 cursor-pointer'  />
               </div>
@@ -44,7 +143,7 @@ const Projects = () => {
               <div  className="tech text-sm mt-2 text-[#C1FFC1]" data-aos= 'fade-up'>
               <code>{card.tech}</code>
               </div>
-              <div className="share-online flex justify-end gap-5 mt-5" data-aos= 'fade-up'>
+              <div className="share-online flex justify-end gap-5 mt-5 p-2" data-aos= 'fade-up'>
                 <Link href={card.link}>
                 <Image 
                   src={card.icon} 
@@ -52,7 +151,9 @@ const Projects = () => {
                   width={25}
                 />
                 </Link>
-                <Link href={card.link}>
+                <Link href={card.link} rel='noopener noreferrer' target='_blank'
+                  className='hover:-translate-y-1 duration-150'
+                >
                 <Image 
                   src={card.icon2} 
                   alt='icon'
@@ -64,6 +165,7 @@ const Projects = () => {
             </div>
           );
         })}
+     
       </div>
   );
 }

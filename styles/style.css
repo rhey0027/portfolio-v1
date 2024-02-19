@@ -1,5 +1,5 @@
-
-li {
+/* -----------NAVBAR-------------- */
+.nav-ul .nav-li {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -8,14 +8,14 @@ li {
   transition: all 0.3s ease;
   padding: 10px 15px;
 }
-li:hover {
+.nav-ul .nav-li:hover {
   color: #C1FFC1;
   background-color: orangered;
 }
 .naviLinks {
   margin-right: 10px;
 }
-/* PROFILE IMAGE */
+/*----------- PROFILE IMAGE----------- */
 .profile-wrapper {
   position: relative;
   height: 340px;
@@ -27,22 +27,25 @@ li:hover {
   width: 100%;
   height: 100%;
 }
-/* .card:nth-child(2) {
+/*----------------- PROJECTS------------- */
+.card:nth-child(3) {
   direction: rtl;
 }
-.card:nth-child(2) .icons{
-  margin-right: 20px;
+.card:nth-child(5) {
+  direction: rtl;
 }
-.card-details .project-description {
-  padding: 20px 10px;
-} */
-/* CONTACT FORM */
+.card:nth-child(7) {
+  direction: rtl;
+}
+.card:nth-child(9) {
+  direction: rtl;
+}
+
+/*---------- CONTACT FORM ------------ */
 .contact-form {
   color: whitesmoke;
   /* width: 350px; */
   margin: 0 auto;
-  margin-bottom: 70px;
-
 }
 .contact-form img {
   margin: 0 auto;
@@ -58,7 +61,6 @@ label {
   font-weight: lighter;
   display: block;
   margin-bottom: 3px;
-  
 }
 input {
   display: block;
@@ -94,10 +96,10 @@ textarea:focus {
   background-color:  rgb(109, 237, 247);
   color: #000;
 }
+/* ---------SCROLL COMPONENT --------- */
 .scroll-to-top {
   color: orangered;
   font-size: 22px;
-  /* background-color: antiquewhite; */
   border-radius: 50%;
   position: fixed;
   bottom: 60px;
@@ -114,12 +116,12 @@ textarea:focus {
   transform: translateY(-5px);
   background-color: whitesmoke;
 }
-/* CARD */
+/*--------- CARD -------------*/
 .card-wrapper .description {
   font-family: 'Inter',sans-serif;
   font-weight: 200;
 }
-/* DEV DETAILS */
+/*------------ DEV DETAILS ------------*/
 .dev-details {
   background-image: -webkit-linear-gradient(
     45deg,
@@ -132,16 +134,26 @@ textarea:focus {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* SOCIAL ICONS */
+/*--------- SOCIAL ICONS --------*/
 .social-icon div {
   margin-bottom: 10px;
 }
-
-/* Contact success message */
+/* --------- CONTACT SEND MSG --------- */
 .success {
   border: 1px solid #C1FFC1;
   padding: 5px 10px;
   border-radius: 4px;
   display: inline;
   margin-left: 20px;
+}
+/* SKILLSET MODAL */
+.front-li {
+  list-style: disc;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 5px;
+}
+.front-li:hover {
+  background-color: #f77d03;
+  font-weight: 500;
 }
