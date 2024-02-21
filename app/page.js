@@ -41,7 +41,7 @@ const Page = () => {
         </div>
         <div className="text-slate-400 text-md md:w-4/5 mb-10 lg:text-2xl">
         <p data-aos='fade-up'>
-          I have always been fascinated by how things work on the web and how it forms the design by using only codes, and it gives me the desire
+          I have always been interested by how things work on the web and how it forms graphics, clickable buttons,routing to another page, fetching data by using only codes, and it gives me the desire
           to learn more. Creative and Detailed Software Developer. Eager to
           learn more about the latest
           <code className="text-[#c1ffc1] text-2xl">

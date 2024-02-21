@@ -16,7 +16,7 @@ const Skillset = () => {
         </h1>
       </div>
       <div className="w-full md:grid grid-cols-2 gap-7">
-        <div className="p-2 mb-4 bg-blue-600 rounded-md" data-aos="fade-up">
+        <div className="p-2 mb-4 bg-blue-700 rounded-md" data-aos="fade-up">
           <div
             className="w-[100px] py-1 rounded-full border border-1 text-center mb-5"
             data-aos="fade-up"

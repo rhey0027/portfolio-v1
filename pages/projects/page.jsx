@@ -132,7 +132,7 @@ const Projects = () => {
               <div className='flex justify-center' data-aos= 'fade-up'>
                 <Image src={card.img}  alt={card.img} className='objectFit hover:scale-105 duration-150 cursor-pointer'  />
               </div>
-              <div className="details px-3 lg:text-end">
+              <div className="md:px-[100px] lg:px-3 details lg:text-end">
               <div className='my-3' data-aos= 'fade-up'>
                 <p className='font-thin text-white'>Latest Build</p>
                 <h3 className='text-orange-400 text-[22px] font-bold'>{card.title}</h3>
@@ -155,6 +155,7 @@ const Projects = () => {
                   src={card.icon} 
                   alt='icon'
                   width={25}
+                  height={25}
                 />
                 </Link>
                   <Link 
@@ -167,6 +168,7 @@ const Projects = () => {
                       src={card.icon2} 
                       alt='icon'
                       width={25}
+                      height={25}
                       data-tooltip-target="live-website"
                     />
                     <div id='live-website' role='tooltip' className="absolute z-10 invisible inline-block px-3 py-1 text-sm text-black duration-150 opacity-0 bg-yellow-300 rounded-lg shadow-sm">

@@ -39,7 +39,9 @@
 }
 .card:nth-child(9) {
   direction: rtl;
-
+}
+.card:nth-child(11) {
+  direction: rtl;
 }
 
 /*---------- CONTACT FORM ------------ */
