@@ -119,7 +119,7 @@ const Projects = () => {
 
   return (
       <div id='projects' className="card-wrapper mb-20">
-        <div className="about flex items-center mb-3 pl-4 lg:pl-20 "data-aos='fade-up'>
+        <div className="about flex items-center mb-3 pl-4 "data-aos='fade-up'>
         <FcServices
           size={30}
           />

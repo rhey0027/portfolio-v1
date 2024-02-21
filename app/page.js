@@ -20,15 +20,15 @@ const Page = () => {
   return (
     <>
     <Navbar />
-      <div className="home px-4 pt-10 md:px-8 z-0 xl:px-20">
+      <div className="home px-4 pt-10 md:px-8 xl:px-20">
         <code className="text-[#C1FFC1] text-md font-bold"data-aos='fade-up'>
           Hello! my name is
         </code>
         <h1 className="text-3xl md:text-5xl mb-3 font-bold text-yellow-400" data-aos='fade-up'>
           Rhey Yu.
         </h1>
-        <div className="h-[35px] mb-28 md:mb-48 text-[30px] md:text-[50px] lg:mb-28 xl:mb-28">
-          <h1 className=" font-bold text-slate-300" data-aos='fade-up'>
+        <div className="mb-10 text-[30px]">
+          <h1 className=" font-bold text-slate-300 md:text-[50px] z-50" data-aos='fade-up'>
             I&#39;m a Full Stack Web Developer.
           </h1>
           <h3 className=" font-bold text-slate-400 md:text-[45px] " data-aos='fade-up'>
