@@ -29,7 +29,7 @@ const Page = () => {
         </h1>
         <div className="mb-10 text-[30px]">
           <span className="font-bold text-slate-300 md:text-[50px]" data-aos='fade-up'>
-            I&#39;m a Full Stack Web Developer000.
+            I&#39;m a Full Stack Web Developer.
           </span>
           <h3 className=" font-bold text-slate-400 md:text-[45px] " data-aos='fade-up'>
             A Graphic Artist.
