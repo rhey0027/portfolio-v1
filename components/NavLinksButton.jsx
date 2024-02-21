@@ -33,7 +33,7 @@ const NavLinksButton = () => {
     )}
   </button>
     {showLinks && (
-      <div className="flex flex-col w-[100px] absolute right-2 top-[72px] bg-zinc-800 shadow-md rounded-md md:hidden z-40"
+      <div className="absolute flex flex-col w-[100px]  right-2 top-[72px] bg-zinc-800 shadow-md rounded-md md:hidden z-50"
         onClick={() => setShowLinks(false)}
       >
         <ul className="nav-ul ext-end">

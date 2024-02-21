@@ -28,9 +28,9 @@ const Page = () => {
           Rhey Yu.
         </h1>
         <div className="mb-10 text-[30px]">
-          <h1 className=" font-bold text-slate-300 md:text-[50px] z-50" data-aos='fade-up'>
-            I&#39;m a Full Stack Web Developer.
-          </h1>
+          <span className="font-bold text-slate-300 md:text-[50px]" data-aos='fade-up'>
+            I&#39;m a Full Stack Web Developer000.
+          </span>
           <h3 className=" font-bold text-slate-400 md:text-[45px] " data-aos='fade-up'>
             A Graphic Artist.
           </h3>
