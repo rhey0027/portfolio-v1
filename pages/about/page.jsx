@@ -6,7 +6,7 @@ import { FcReadingEbook } from "react-icons/fc";
 const About = () => {
   return (
     <div id='about' className="mb-20 w-full text-slate-400">
-      <div className="about flex items-center mb-3 pl-4 lg:pl-20"data-aos='fade-up'>
+      <div className="about flex items-center mb-3 sm:pl-4 pt-5 md:pt-10 lg:pl-10"data-aos='fade-up'>
         <FcReadingEbook
           size={30}
           />

@@ -1,4 +1,3 @@
-import 'flowbite';
 import Image from 'next/image'
 import Link from 'next/link';
 import { FcServices } from "react-icons/fc";
@@ -128,11 +127,11 @@ const Projects = () => {
       </div>
         {cards.map((card) => {
           return (
-            <div className="card lg:grid grid-cols-2 lg:p-16" key={card.id}>
+            <div className="card pt-2 lg:grid grid-cols-2 lg:pt-10" key={card.id}>
               <div className='flex justify-center' data-aos= 'fade-up'>
-                <Image src={card.img}  alt={card.img} className='objectFit hover:scale-105 duration-150 cursor-pointer'  />
+                <Image src={card.img}  alt={card.img} className='sm:w-full md:px-5 object-contain hover:scale-105 duration-150 cursor-pointer'/>
               </div>
-              <div className="md:px-[100px] lg:px-3 details lg:text-end">
+              <div className="md:px-[50px] lg:px-3 details lg:text-end">
               <div className='my-3' data-aos= 'fade-up'>
                 <p className='font-thin text-white'>Latest Build</p>
                 <h3 className='text-orange-400 text-[22px] font-bold'>{card.title}</h3>
@@ -169,13 +168,7 @@ const Projects = () => {
                       alt='icon'
                       width={25}
                       height={25}
-                      data-tooltip-target="live-website"
                     />
-                    <div id='live-website' role='tooltip' className="absolute z-10 invisible inline-block px-3 py-1 text-sm text-black duration-150 opacity-0 bg-yellow-300 rounded-lg shadow-sm">
-                      <p>website</p>
-                      <div className='tooltip-arrow' data-popper-arrow>
-                      </div>
-                  </div>
                   </Link>
                 </div>
               </div>

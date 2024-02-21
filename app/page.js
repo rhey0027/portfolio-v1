@@ -6,9 +6,6 @@ import ScrollTop from '@components/ScrollTop';
 import About from '@pages/about/page';
 import Contact from '@pages/contact/page';
 import Projects from '@pages/projects/page';
-          
-
-
 
 import AOS from "aos"
 import 'aos/dist/aos.css'
@@ -23,8 +20,7 @@ const Page = () => {
   return (
     <>
     <Navbar />
-      <div className="home px-4 pt-10 z-0 xl:px-20">
-        <div className='p-5 md:pt-20 mb-10'>
+      <div className="home px-4 pt-10 md:px-8 z-0 xl:px-20">
         <code className="text-[#C1FFC1] text-md font-bold"data-aos='fade-up'>
           Hello! my name is
         </code>
@@ -49,13 +45,12 @@ const Page = () => {
           </code>
         </p>
         </div>
-        <PortfolioButton  />
-        </div>
-      <About />
-      <Projects />
-      <Contact />
-      <ScrollTop />
-      <Footer />
+          <PortfolioButton />
+          <About />
+          <Projects />
+          <Contact />
+          <ScrollTop />
+          <Footer />
       </div>
     </>
   );
