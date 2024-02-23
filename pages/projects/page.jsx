@@ -114,7 +114,7 @@ const Projects = () => {
       icon: require ('../../public/projects/git.jpg'), 
       link: "https://github.com/jay-jay/bucket-list-app",
       icon2: require ('../../public/projects/share.jpg'),
-      link: "https://horoscop-rhey0027.vercel.app/",
+      link: "https://horoscop.vercel.app/",
     }, 
   ]
 
